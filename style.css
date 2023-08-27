@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,300&display=swap');
+
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Roboto', sans-serif;  
+}
+
+body{
+  background-image: url(images/DowneyMcdonalds.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* navbar */
+
+ul {
+    justify-content: center;
+    list-style-type: none;
+    box-shadow: 3px 3px 10px #2e2e2e;
+    background-color: rgb(218 41 28);
+    display: flex;
+  }
+  ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    background-color: rgb(	218 41 28);
+    height: 40px;
+    padding: 30px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(255 199 44);
+  } 
+/* navbar end */
+
+ /* content */
+ 
+  div.content-container1 {
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 100px;
+    display: flex;
+  }
+
+  div.bigMac {
+    background-color:rgba(0 ,0 ,0 ,0.4);
+    border: groove 10px;
+    border-radius: 25px;
+    margin: 50px;
+    padding: 100px;
+    display: flex;
+  }
+
+  img.bigMac-images {
+    width: 200px;
+    height: 210px;
+  }
+
+  div.bigMac-detail{
+    color: #fff;
+    text-align: center;
+  }
+
+  div.bigMac-detail > p {
+    padding-top: 15px;
+    font-size: 100%;
+  }
+
+  .about-container{
+    color: #fff;
+    background-color: rgba(0 ,0 ,0 ,0.4);
+    text-align: center;
+    padding: 100px;
+  }
+
+  div#about > p {
+    font-size: larger;
+    padding:  30px;
+  }
+
+ 
+/* content end */
+
+/* footer */
+
+.footer {
+  background-color: rgb(39 ,37, 31);
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px; 
+  position: absolute;
+  width: 100%;
+}
+
+/* footer end */
+
+@media only screen and (max-width: 600px) {
+  div.content-container1 {
+    width: 70%;
+    margin-top: 90px;
+    margin-left: 90px;
+    display: block;
+  }
+  div.bigMac {
+    background-color:rgba(0 ,0 ,0 ,0.4);
+    border: groove 10px;
+    border-radius: 25px;
+    margin: 20px;
+    padding: 35px;
+  }
+
+  img.bigMac-images {
+    width: 160px;
+    height: 160px;
+    padding-top: 40px;
+  }
+
+  div.bigMac-detail{
+    color: #fff;
+    text-align: center;
+  }
+
+  div.bigMac-detail > p {
+    padding-top: 30px;
+    font-size: 90%;
+  }
+
+  .about-container {
+    color: #fff;
+    background-color: rgba(0 ,0 ,0 ,0.4);
+    text-align: center;
+    padding: 100px;
+  }
+
+  div#about > p {
+    font-size: 80%;
+    padding:  10px;
+  }
+
+}
+
+@media only screen and (max-width: 1280px) {
+  div.nav-links{
+    font-size: larger;
+  }
+
+  div.content-container1 {
+    width: 90%;
+    margin-top: 100px;
+    margin-left: 60px;
+    display: block;
+  }
+  div.bigMac {
+    background-color:rgba(0 ,0 ,0 ,0.4);
+    border: groove 10px;
+    border-radius: 25px;
+    margin: 50px;
+    padding: 80px; 
+  }
+
+  img.bigMac-images {
+    width: 400px;
+    height: 400px;
+  }
+
+  div.bigMac-detail{
+    color: #fff;
+    text-align: center;
+    font-size: 200%;
+  }
+
+  div.bigMac-detail > p {
+    padding-top: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .about-container{
+    color: #fff;
+    background-color: rgba(0 ,0 ,0 ,0.4);
+    text-align: center;
+    padding: 100px;
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  div#about > p {
+    padding: 10px;
+  }
+}
